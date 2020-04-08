@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Browse</title>
+    <link rel="stylesheet" type="text/css" href="../css/browse.css">
+</head>
+<body>
+  <!--导航栏-->
+  <div class="menu">
+   <ul>
+    <li><a href="首页.html">Home</a></li>
+    <li id="browse"><a href="浏览页.html">Browse</a></li>
+    <li><a href="搜索页.html">Search</a></li>
+    <div class="dropdown">
+        <a href="" class="dropbtn">My Account</a>
+        <div class="dropdown-content">
+            <a href="上传.html"><img src="../../images/16.png"> upload</a>
+            <a href="我的照片.html"><img src="../../images/4.png"> my photo</a>
+            <a href="我的收藏.html"><img src="../../images/3.png"> my favourite</a>
+            <a href="../../index.html"><img src="../../images/2.png"> sign in</a>
+        </div>
+    </div>
+   </ul>
+  </div>
+  <!--主体内容-->
+  <div class="content">
+    <!--搜索部分-->
+    <div>
+       <div class="serach">
+        <div>
+          <h2>Search by Title</h2>
+          <input type="text" name="title">
+          &nbsp;
+          <img src="../../images/search.png" onclick="alert('Seacrch success !')">
+          <br><br><hr>
+        </div>
+        <div>
+          <h2>Hot Content</h2>
+          <a href="" onclick="alert('Seacrch success !')">1.Scenery</a><br>
+          <a href="" onclick="alert('Seacrch success !')">2.City</a><br>
+          <a href="" onclick="alert('Seacrch success !')">3.People</a><br>
+          <a href="" onclick="alert('Seacrch success !')">4.Animal</a><br>
+          <a href="" onclick="alert('Seacrch success !')">5.Building</a><br>
+          <a href="" onclick="alert('Seacrch success !')">6.Wonder</a>
+            <br><br><hr>
+        </div>
+        <div>
+            <h2>Hot Country</h2>
+            <a href="" onclick="alert('Seacrch success !')">China</a><br>
+            <a href="" onclick="alert('Seacrch success !')">Italy</a><br>
+            <a href="" onclick="alert('Seacrch success !')">Japan</a><br>
+            <a href="" onclick="alert('Seacrch success !')">America</a><br>
+            <a href="" onclick="alert('Seacrch success !')">Sweden</a>
+            <br><br><hr>
+        </div>
+        <div>
+               <h2>Hot City</h2>
+               <a href="" onclick="alert('Seacrch success !')">Beijing</a><br>
+               <a href="" onclick="alert('Seacrch success !')">Tokyo</a><br>
+               <a href="" onclick="alert('Seacrch success !')">London</a><br>
+               <a href="" onclick="alert('Seacrch success !')">New Yok</a><br>
+               <a href="" onclick="alert('Seacrch success !')">Roma</a><br>
+               <a href="" onclick="alert('Seacrch success !')">Shanghai</a>
+               <br><br>
+        </div>
+    </div>
+    </div>
+    <!--结果部分-->
+    <div class="resault">
+        <h2>Filter</h2>
+        <select>
+            <option selected>concent</option>
+            <option>animal</option>
+            <option>scenery</option>
+            <option>building</option>
+        </select>
+        <select id="country">
+            <option selected>country</option>
+            <option >China</option>
+            <option >Japan</option>
+            <option >Italy</option>
+            <option >American</option>
+        </select>
+        <select id="city">
+            <option selected>city</option>
+        </select>
+        <button onclick="alert('Serach success!')">Filter</button>
+        <br><br><hr>
+        <div class="picture">
+            <div><a href="图片.html"><img src="../../images/travel-images/normal/medium/222223.jpg"></a></div>
+            <div><a href="图片.html"><img src="../../images/travel-images/normal/medium/5857298322.jpg"></a></div>
+            <div><a href="图片.html"><img src="../../images/travel-images/normal/medium/6114881215.jpg"></a></div>
+            <div><a href="图片.html"><img src="../../images/travel-images/normal/medium/9498386718.jpg"></a></div>
+            <div><a href="图片.html"><img src="../../images/travel-images/normal/medium/8710513053.jpg"></a></div>
+            <div><a href="图片.html"><img src="../../images/travel-images/normal/medium/9494472443.jpg"></a></div>
+            <div><a href="图片.html"><img src="../../images/travel-images/normal/medium/5855191275.jpg"></a></div>
+            <div><a href="图片.html"><img src="../../images/travel-images/normal/medium/6119130918.jpg"></a></div>
+            <div><a href="图片.html"><img src="../../images/travel-images/normal/medium/9496560520.jpg"></a></div>
+            <div><a href="图片.html"><img src="../../images/travel-images/normal/medium/9502740177.jpg"></a></div>
+            <div><a href="图片.html"><img src="../../images/travel-images/normal/medium/9493997865.jpg"></a></div>
+            <div><a href="图片.html"><img src="../../images/travel-images/normal/medium/5856616479.jpg"></a></div>
+            <div><a href="图片.html"><img src="../../images/travel-images/normal/medium/6114867983.jpg"></a></div>
+            <div><a href="图片.html"><img src="../../images/travel-images/normal/medium/9494282329.jpg"></a></div>
+            <div><a href="图片.html"><img src="../../images/travel-images/normal/medium/9496792166.jpg"></a></div>
+            <div><a href="图片.html"><img src="../../images/travel-images/normal/medium/9498381010.jpg"></a></div>
+        </div>
+        <!--页码-->
+        <div class="page">
+            <a href="">首页</a>
+            <a href="">上一页</a>
+            <a href="">1</a>
+            <a href="">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <a href="">5</a>
+            <a href="">下一页</a>
+            <a href="">末页</a>
+        </div>
+    </div>
+  </div>
+  <!--页脚-->
+  <div class="bottom">@19302010060@fudan.edu.cn</div>
+  <script>//二级联动js
+     var country = document.getElementById("country");
+     country.onchange = function () {
+         var childLinkage = document.getElementById("city");
+         childLinkage.innerHTML = ""; // 每次进来先清空城市列表
+         var divValue = this.value;
+         var cities = [];
+
+         switch (divValue) {
+             case "country":
+                 cities = ['city']
+                 break;
+             case "China":
+                 cities = ['Shanghai','Kunming','Beijing','Yantai']
+                 break;
+             case "Japan":
+                 cities = ['Tokyo', 'Osaka', 'Kamakura']
+                 break;
+             case "Italy":
+                 cities = ['Roma','Milan','Venice','Florence']
+             case "American":
+                 cities = ['New York','San Francisco', 'Washington']
+                 break;
+         }
+         for (var i = 0; i < cities.length; i++) {
+             var option = document.createElement('option'); //先创建option
+             var textNode = document.createTextNode(cities[i]);
+             option.appendChild(textNode);
+             childLinkage.appendChild(option);
+         }
+     }
+ </script>
+</body>
+</html>

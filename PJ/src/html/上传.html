@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>上传</title>
+    <link rel="stylesheet" type="text/css" href="../css/upload.css">
+</head>
+<body>
+    <!--导航栏-->
+    <div class="menu">
+      <ul name="top">
+        <li ><a href="首页.html">Home</a></li>
+        <li><a href="浏览页.html">Browse</a></li>
+        <li id="serach"><a href="搜索页.html">Search</a></li>
+        <div class="dropdown">
+            <a href="" class="dropbtn">My Account</a>
+            <div class="dropdown-content">
+                <a href="上传.html" id="upload"><img src="../../images/16.png"> upload</a>
+                <a href="我的照片.html"><img src="../../images/4.png"> my photo</a>
+                <a href="我的收藏.html"><img src="../../images/3.png"> my favourite</a>
+                <a href="../../index.html"><img src="../../images/2.png"> sign in</a>
+            </div>
+        </div>
+      </ul>
+    </div>
+    <!--标题-->
+    <h2>UOLOAD YOUR NEW POTHOGRAPH</h2>
+    <!--主体，采用grid布局-->
+    <div class="content">
+        <div class="picture" id="imgPreview">
+            <img src="../../images/NO.png">
+        </div>
+        <div>
+           <h3>Title :</h3>
+           <input type="text" name="title">
+        </div>
+        <div>
+           <h3>Theme :</h3>
+           <input type="text" name="theme">
+        </div>
+        <div>
+           <h3>Countary :</h3>
+           <input type="text" name="country">
+        </div>
+        <div>
+           <h3>City :</h3>
+           <input type="text" name="city">
+        </div>
+        </div>
+    <!--描述输入框-->
+    <div class="des">
+      <h3>Description :</h3>
+      <input type="text" name="description">
+    </div>
+    <!--两个按钮-->
+    <div class="put">
+        <div><button onclick="upload();">choose</button>
+            <input type="file" onchange='PreviewImage(this)' id="File" style="display: none">
+        </div>
+        <div><a href="我的照片.html"><button onclick="alert('The picture has been upload.')">submit</button></a></div>
+    </div>
+    <!--页脚-->
+    <div class="bottom">@19302010060@fudan.edu.cn</div>
+    <script>
+        /*将choose按钮与选择文件关联*/
+       function upload(){
+          var file = document.getElementById("File");
+          file.click();
+        }
+        /*实现图片预览*/
+       function PreviewImage(imgFile) {
+           /*允许下列文件格式*/
+          var pattern = /(\.*.jpg$)|(\.*.png$)|(\.*.jpeg$)|(\.*.gif$)/;
+          if (!pattern.test(imgFile.value)) {
+              alert("系统仅支持jpg/jpeg/png/gif/bmp格式的照片！");
+              imgFile.focus();
+          } else {
+              var path;
+              if (document.all) {//IE
+                  imgFile.select();
+                  path = document.selection.createRange().text;
+                  document.getElementById("imgPreview").innerHTML = "";
+                  document.getElementById("imgPreview").style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true',sizingMethod='scale',src=\"" + path + "\")";//使用滤镜效果
+              } else {//FF
+                  path = URL.createObjectURL(imgFile.files[0]);
+                  document.getElementById("imgPreview").innerHTML = "<img src='"+path+"'/>";
+              }
+          }
+      }
+    </script>
+</body>
+</html>

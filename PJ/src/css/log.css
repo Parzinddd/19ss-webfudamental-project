@@ -1,0 +1,82 @@
+html { height: 100%; }
+body {
+    background:  url(../../images/background.png) 50% 50% no-repeat;
+    background-size: 100% 100%;
+    margin: 0;
+}
+.login {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 430px;
+    height: 550px;
+    margin: -300px 0 0 -215px;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+}
+.logo {
+    width: 104px;
+    height: 104px;
+    margin: 50px auto 80px;
+    background: url(../../images/login.png) 0 0 no-repeat;
+}
+.form {
+    position: relative;
+    width: 360px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+.form input {
+    width: 288px;
+    height: 48px;
+    padding-left: 70px;
+    border: 1px solid #ffffff;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #fff;
+    background-color: transparent;
+    outline: none;
+}
+.form button {
+    width: 360px;
+    height: 50px;
+    border: 0;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #3f6f69;
+    background-color: #ffffff;
+}
+#username {
+    background: url(../../images/emil.png) 20px 14px no-repeat;
+}
+#password {
+    background: url(../../images/password.png) 23px 11px no-repeat;
+}
+.log {
+    width: 360px; margin: 20px auto 0; font-size: 14px; overflow: hidden;
+}
+.log a {
+    color: #fff; text-decoration: none;
+}
+.log a:hover {
+    text-decoration: underline;
+}
+.log .reg {
+    float: left;
+}
+.log .forget {
+    float: right;
+}
+.login ::-webkit-input-placeholder {
+    font-size: 18px; line-height: 1.4; color: #fff;
+}
+.bottom{
+    height: 30px;
+    font-size: 15px;
+    text-align: center;
+    color: aliceblue;
+    position: fixed;
+    top: 95%;
+    right: 45%;
+
+}
