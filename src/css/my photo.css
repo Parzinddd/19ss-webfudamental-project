@@ -146,3 +146,21 @@ h1 {
 .button img:hover {
     transform: scale(1.1, 1.1);
 }
+@media screen and (max-width: 500px){
+    .content{
+        display: block;
+        padding:3%;
+        margin: 0;
+    }
+    .menu li a, .dropbtn {
+        padding:1px ;
+    }
+    .button{
+        right: 2%;
+        top: 90%;
+    }
+    .content img{
+        width: 80%;
+
+    }
+}

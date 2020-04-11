@@ -150,3 +150,30 @@ body{
 .button img:hover {
     transform: scale(1.1, 1.1);
 }
+textarea{
+    width: 90%;
+}
+@media screen and (max-width: 500px){
+  .serach{
+    margin: 0;
+}
+  .resault{
+    margin: 0;
+}
+   .content{
+    display: block;
+    padding-left: 0;
+    padding-right: 5%;
+    padding-top: 3%;
+}
+  .content img{
+    width: 70%;
+    height: 70%;
+}
+  .page{
+    font-size: 15px;
+}
+  .menu li a, .dropbtn {
+    padding:1px ;
+}
+}

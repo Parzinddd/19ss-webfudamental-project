@@ -1,16 +1,15 @@
 html { height: 100%; }
 body {
-    background:  url(../../images/background.png) 50% 50% no-repeat;
+    background:  url(../../img/background.png) 50% 50% repeat-y;
     background-size: 100% 100%;
     margin: 0;
 }
 .login {
-    position: absolute;
-    left: 50%;
-    top: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
     width: 430px;
     height: 550px;
-    margin: -300px 0 0 -215px;
     border: 1px solid #ffffff;
     border-radius: 20px;
 }
@@ -18,7 +17,7 @@ body {
     width: 104px;
     height: 104px;
     margin: 50px auto 80px;
-    background: url(../../images/login.png) 0 0 no-repeat;
+    background: url(../../img/login.png) 0 0 no-repeat;
 }
 .form {
     position: relative;
@@ -47,10 +46,10 @@ body {
     background-color: #ffffff;
 }
 #username {
-    background: url(../../images/emil.png) 20px 14px no-repeat;
+    background: url(../../img/emil.png) 20px 14px no-repeat;
 }
 #password {
-    background: url(../../images/password.png) 23px 11px no-repeat;
+    background: url(../../img/password.png) 23px 11px no-repeat;
 }
 .log {
     width: 360px; margin: 20px auto 0; font-size: 14px; overflow: hidden;
@@ -75,8 +74,24 @@ body {
     font-size: 15px;
     text-align: center;
     color: aliceblue;
-    position: fixed;
-    top: 95%;
-    right: 45%;
-
+}
+@media only screen and (max-width:500px) {
+    .login{
+        border: none;
+        width: 100%;
+    }
+    .form{
+        width: 100%;
+    }
+    .form button{
+        width: 100%;
+    }
+    .form input{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .log{
+        width: 100%;
+    }
 }

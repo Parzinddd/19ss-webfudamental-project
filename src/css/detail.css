@@ -70,17 +70,17 @@ h1 {
     text-align: center;
 }
 .content {
+    margin-left: 7%;
+    margin-right: 7%;
     display: grid;
     grid-template-columns: 470px 300px;
-    grid-template-rows: 450px 300px;
+    grid-template-rows: 450px 250px;
     justify-content:space-evenly;
     color: #f1f1f1;
     border: 5px solid rgba(255, 255, 255, 0.54);
     border-radius: 10px;
     justify-items: center;
     align-items: center;
-    padding-left: 100px;
-    padding-right: 100px;
 }
 .content img{
     border: 5px solid rgba(180, 173, 98, 0.38);
@@ -126,4 +126,31 @@ h1 {
 }
 .button img:hover {
     transform: scale(1.1, 1.1);
+}
+@media screen and (max-width: 500px) {
+    .content{
+        display: block;
+        padding:0 ;
+        margin:0 ;
+    }
+    .content img{
+        width: 90%;
+        height: auto;
+    }
+    .detail{
+        padding-left: 5%;
+    }
+    .article{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .button{
+        right: 3%;
+        top: 90%;
+    }
+    .button img{
+        width: 30px;
+        height: 30px;
+    }
+
 }

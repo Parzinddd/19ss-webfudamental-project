@@ -154,3 +154,32 @@ select{
     font-weight:bold ;
     margin-right: 50px;
 }
+@media screen and (max-width: 500px){
+    .content{
+        display: block;
+        margin: 0;
+    }
+
+    .serach{
+        margin:2%;
+        width: 90%;
+    }
+    .resault{
+        margin:2% ;
+        width: 90%;
+    }
+    .picture{
+        display: block;
+    }
+    .picture img{
+        margin-top: 5%;
+        margin-left: 20%;
+        width:50%;
+    }
+    .resault button{
+        float: none;
+    }
+    .menu li a, .dropbtn {
+        padding:1px ;
+    }
+}

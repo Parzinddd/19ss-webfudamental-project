@@ -122,9 +122,6 @@ h2 {
     padding-right: 100px;
 
 }
-#button{
-
-}
 .put button{
 
     width:145px;
@@ -146,4 +143,29 @@ h2 {
     background-color: rgba(74, 74, 74, 0.38);
     text-align: center;
     color: aliceblue;
+}
+@media screen and (max-width: 500px) {
+    .menu li a, .dropbtn {
+        padding: 1px;
+    }
+    .content{
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+    .content input{
+        width: 95%;
+    }
+    .des{
+        margin: 0;
+    }
+    .des input{
+        width: 95%;
+    }
+    .put button{
+        margin-top: 5%;
+    }
+    .put div{
+        padding: 0;
+    }
 }

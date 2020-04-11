@@ -119,3 +119,21 @@ body{
 .button img:hover {
     transform: scale(1.1, 1.1);
 }
+@media only screen and (max-width:500px) {
+    .content{
+        display: block;
+        padding:5%;
+    }
+    .content img {
+        width: 50%;
+        height: 50%;
+        margin-left: 25%;
+    }
+    .button{
+        right: 3%;
+        top: 90%;
+    }
+    .menu li a, .dropbtn {
+        padding:1px ;
+    }
+}
