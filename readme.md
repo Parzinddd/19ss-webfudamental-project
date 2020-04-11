@@ -3,8 +3,8 @@
 19302010060 - 牛嘉阳
 
 # 1.地址
-- github地址：
-- github pages地址:
+- github地址：https://github.com/jack-dord/19ss-webfudamental-project
+- github pages地址:https://jack-dord.github.io/19ss-webfudamental-project/
 # 2.项目完成情况
 - 需求文档中所有基础功能均完成。
 - 各项功能均按照文档要求完成。
@@ -18,6 +18,6 @@
   - 页面颜色采用较少，比较简洁美观。
 - 响应式设计
    - 多数元素大小通过百分比设定，浏览器宽度改变时布局收到影响较小；
-   - 通过媒体查询的方法，当浏览器width小于500px时重新布局，达到响应式要求。
+   - 通过媒体查询的方法，当浏览器width小于500px时重新布局，在手机端可以正常显示，达到响应式要求。
 # 4.建议   
   - 感觉PJ1的设计很好，贴合课程进度（html与css)，能够很好的应用课堂学到的内容；
